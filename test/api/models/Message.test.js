@@ -5,9 +5,7 @@ describe('Message Model', function() {
         text: 'Hola',
         author: 1
       }).exec( function(err, message) {
-        console.log(err);
         if (err) {return done(err);}
-        console.log(message);
         done();
       });
     });

@@ -14,8 +14,9 @@ var testConfig = {
       adapter: 'sails-memory'
     }
   },
-  connection: 'testDB',
-  migrate: 'drop'
+  models: {
+    connection: 'testDB'
+  }
 };
 
 before(function (done){
